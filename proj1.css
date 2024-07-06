@@ -1,0 +1,27 @@
+
+.bahamas-flag{
+    height: 200px;
+    width: 300px;
+}
+.box1{
+    background-color: #00a9ce;
+    height: 70px;
+}
+.box2{
+    background-color: #FDDA25;
+    height: 60px;
+}
+.box3{
+    background-color: #00a9ce;
+    height: 70px;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid black;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 200px;
+}
