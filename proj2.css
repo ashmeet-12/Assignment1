@@ -6,6 +6,7 @@
 .main-content{
     position: absolute;
     top: 0;
+    width: 100%;
 }
 .navbar{
     /* background-color: blueviolet; */
@@ -15,23 +16,25 @@
     font-size: 1.85rem;
     font-weight: 500;
     justify-content: space-between;
-    margin: 20px;
-    margin-top: 40px;
+    /* margin: 20px;
+    margin-top: 40px; */
+    padding: 20px 40px;
 }
 .logo{
     height: 4.5rem;
     width: 4.5rem;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     background-image: url("https://i.pinimg.com/474x/99/ed/e1/99ede1573c84592d819c7f4fd32fa9e0.jpg");
     background-size: cover;
 
 }
 .nav-i{
-    margin-right: 65px;
+    margin-right: 30px;
     color: rgb(66, 66, 66);
 }
 .nav-right{
     display: flex;
+    align-items: center;
     
 }
 .bg-img{
@@ -39,6 +42,7 @@
     width: 100vw;
     background-image: url("bg.jpg");
     background-size: cover;
+    background-position: center;
 }
 .intro{
     margin-left: 60px;
@@ -95,10 +99,61 @@
 .b4{
     opacity: 0.25;
 }
-/* @media screen and (max-width:1000px){
-    .bg-img{
-        width: 0em;
-        background-image: url("bg.jpg");
-        background-size: cover;
+
+@media (max-width:786px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }    
+    .nav-i{
+        margin-right: 20px;
     }
-} */
+    .intro{
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .content{
+        width: 80%;
+    }
+    .join-button{
+        margin-left: 20px;
+    }
+    .bottom-buttons{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.25rem;
+    }    
+    .nav-i{
+        margin-right: 10px;
+    }
+    .intro{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .content{
+        width: 90%;
+    }
+    .join-button{
+        margin-left: 10px;
+    }
+    .join-button button{
+        width: 100px;
+        font-size: 0.875rem;
+    }
+    .bottom-buttons{
+        margin-left: 10px;
+    }
+}
